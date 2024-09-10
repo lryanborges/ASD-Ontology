@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/cac4b459-d438-46ad-8fde-8040b5de2496)
+
 <h2>TEA Ontology</h2>
 O foco dessa ontologia é a caracterização de pessoas adultas com TEA dentro do contexto genético e sensorial, com menções à diferenciação entre determinados padrões de comportamento masculino e feminino dentro do transtorno.
 
