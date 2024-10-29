@@ -1,18 +1,54 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://example.com"
+     xml:base="http://teaontology.com"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://example.com">
+     ontologyIRI="http://teaontology.com">
     <Prefix name="" IRI="http://example.com#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="tea" IRI="http://teaontology.com#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="gufo" IRI="http://purl.org/nemo/gufo#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>As consultas SPARQL descritas no arquivo só funcionarão corretamente caso as classes, objectProprieties e dataProprieties estiverem com os IRI de teaontology. Então, ao realizar o procedimento abaixo, aceitar a alteração das IRI.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Talvez você precise alterar o Ontology IRI para &quot;http://example.com&quot; e depois novamente para &quot;http://teaontology.com&quot; para realizar as consultas SPARQL corretamente. Pois, por algum motivo, o Protégé reseta os prefixos das classes sempre que é iniciado</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Category"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Kind"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Phase"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#ADor"/>
     </Declaration>
@@ -50,7 +86,7 @@
         <Class IRI="#CheiraObjetosExcessivamente"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Citomegalovirus"/>
+        <Class IRI="#CitomegalovirusNaGravidez"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ComunicacaoComplexa"/>
@@ -65,6 +101,9 @@
         <Class IRI="#CriacaoDeRituais"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CriancaComTEA"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DificuldadeComIronia"/>
     </Declaration>
     <Declaration>
@@ -72,9 +111,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#EscleroseTuberosa"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EspectroAutista"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FascinacaoPorLuzes"/>
@@ -110,22 +146,34 @@
         <Class IRI="#Hiperacusia"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hiperosmia"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Hipersensibilidade"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hiposensibilidade"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ImitacaoSocialTpica"/>
+        <Class IRI="#HomemComTEA"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#IndividuoComTEA"/>
+        <Class IRI="#IdosoComTEA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImitacaoSocialTpica"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InteresseEspecfico"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InteresseVariado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JovemComTEA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MulherComTEA"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NLGN4"/>
@@ -137,16 +185,22 @@
         <Class IRI="#Olfato"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Paciente"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Paladar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PerfilTEAAdulto"/>
+        <Class IRI="#PartoPrematuro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerfilTEA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PessoaComTEA"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PoucoContatoVisual"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Prematuridade"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PressaoNasExpectativasSociais"/>
@@ -158,7 +212,7 @@
         <Class IRI="#RestricaoAlimentar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Rubeola"/>
+        <Class IRI="#RubeolaNaGravidez"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SHANK3"/>
@@ -197,6 +251,33 @@
         <Class IRI="#Visao"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:isComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCaracteristicaGenetica"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ADor"/>
     </Declaration>
     <Declaration>
@@ -233,7 +314,7 @@
         <NamedIndividual IRI="#CheiraObjetosExcessivamente"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Citomegalovirus"/>
+        <NamedIndividual IRI="#CitomegalovirusNaGravidez"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ComunicacaoComplexa"/>
@@ -248,6 +329,9 @@
         <NamedIndividual IRI="#CriacaoDeRituais"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CriancaComTEA"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#DificuldadeComIronia"/>
     </Declaration>
     <Declaration>
@@ -255,9 +339,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EscleroseTuberosa"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#EspectroAutista"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#FascinacaoPorLuzes"/>
@@ -293,22 +374,34 @@
         <NamedIndividual IRI="#Hiperacusia"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Hiperosmia"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Hipersensibilidade"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Hiposensibilidade"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ImitacaoSocialTpica"/>
+        <NamedIndividual IRI="#HomemComTEA"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#IndividuoComTEA"/>
+        <NamedIndividual IRI="#IdosoComTEA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ImitacaoSocialTpica"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#InteresseEspecfico"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#InteresseVariado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JovemComTEA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MulherComTEA"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#NLGN4"/>
@@ -320,16 +413,46 @@
         <NamedIndividual IRI="#Olfato"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Paciente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente8"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Paladar"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PerfilTEAAdulto"/>
+        <NamedIndividual IRI="#PartoPrematuro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PerfilTEA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PessoaComTEA"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PoucoContatoVisual"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Prematuridade"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PressaoNasExpectativasSociais"/>
@@ -338,10 +461,13 @@
         <NamedIndividual IRI="#ReacaoIncomum"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ReacaoIncomumADor"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#RestricaoAlimentar"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Rubeola"/>
+        <NamedIndividual IRI="#RubeolaNaGravidez"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SHANK3"/>
@@ -380,38 +506,42 @@
         <NamedIndividual IRI="#Visao"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+        <NamedIndividual IRI="#pacienteHasTendenciaFeminina"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="gufo:Mixin"/>
+        <NamedIndividual IRI="#pacienteHasTendenciaMasculina"/>
     </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="gufo:Quality"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="gufo:Kind"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="gufo:Relator"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="gufo:isComponentOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="gufo:SubKind"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="gufo:Category"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
-    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#PessoaComTEA"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <Class IRI="#AdultoComTEA"/>
+                <Class IRI="#CriancaComTEA"/>
+                <Class IRI="#IdosoComTEA"/>
+                <Class IRI="#JovemComTEA"/>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <Class IRI="#HomemComTEA"/>
+                <Class IRI="#MulherComTEA"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PessoaComTEA"/>
+        <ObjectUnionOf>
+            <Class IRI="#AdultoComTEA"/>
+            <Class IRI="#CriancaComTEA"/>
+            <Class IRI="#IdosoComTEA"/>
+            <Class IRI="#JovemComTEA"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PessoaComTEA"/>
+        <ObjectUnionOf>
+            <Class IRI="#HomemComTEA"/>
+            <Class IRI="#MulherComTEA"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#ADor"/>
         <Class IRI="#ReacaoIncomum"/>
@@ -422,21 +552,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AdultoComTEA"/>
-        <Class IRI="#IndividuoComTEA"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AdultoComTEA"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-            <Class IRI="#PerfilTEAAdulto"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AdultoComTEA"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-            <Class IRI="#TendenciaDeGeneroTEA"/>
-        </ObjectMinCardinality>
+        <Class IRI="#PessoaComTEA"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AfeicaoOuRepulsaATextura"/>
@@ -477,10 +593,12 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CaracteristicaGenetica"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class IRI="#PerfilTEAAdulto"/>
-        </ObjectMinCardinality>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class IRI="#PerfilTEA"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CaracteristicaSensorial"/>
@@ -488,27 +606,20 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CaracteristicaSensorial"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class IRI="#PerfilTEAAdulto"/>
-        </ObjectMinCardinality>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class IRI="#PerfilTEA"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CheiraObjetosExcessivamente"/>
         <Class IRI="#Olfato"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Citomegalovirus"/>
-        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citomegalovirus"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectInverseOf>
-                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            </ObjectInverseOf>
-            <Class IRI="#GravidezConturbada"/>
-        </ObjectExactCardinality>
+        <Class IRI="#CitomegalovirusNaGravidez"/>
+        <Class IRI="#GravidezConturbada"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ComunicacaoComplexa"/>
@@ -527,6 +638,10 @@
         <Class IRI="#TendenciaMasculina"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CriancaComTEA"/>
+        <Class IRI="#PessoaComTEA"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DificuldadeComIronia"/>
         <Class IRI="#TendenciaMasculina"/>
     </SubClassOf>
@@ -537,10 +652,6 @@
     <SubClassOf>
         <Class IRI="#EscleroseTuberosa"/>
         <Class IRI="#CaracteristicaGenetica"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EspectroAutista"/>
-        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FascinacaoPorLuzes"/>
@@ -563,10 +674,6 @@
         <Class IRI="#CondicaoParental"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FilhoComTEA"/>
-        <Class IRI="#EspectroAutista"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#FocoNaVisaoPerifrica"/>
         <Class IRI="#Visao"/>
     </SubClassOf>
@@ -576,10 +683,12 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Fotossensibilidade"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
             <Class IRI="#Sensibilidade"/>
-        </ObjectMinCardinality>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FugirDaInteracao"/>
@@ -590,33 +699,25 @@
         <Class IRI="#CondicaoParental"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#GravidezConturbada"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class IRI="#Citomegalovirus"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GravidezConturbada"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class IRI="#Prematuridade"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GravidezConturbada"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class IRI="#Rubeola"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#HabilidadesDeEmpatia"/>
         <Class IRI="#TendenciaFeminina"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hiperacusia"/>
         <Class IRI="#Audicao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hiperosmia"/>
+        <Class IRI="#Olfato"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hiperosmia"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
+            <Class IRI="#Sensibilidade"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hipersensibilidade"/>
@@ -627,12 +728,23 @@
         <Class IRI="#Sensibilidade"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ImitacaoSocialTpica"/>
-        <Class IRI="#TendenciaFeminina"/>
+        <Class IRI="#HomemComTEA"/>
+        <Class IRI="#PessoaComTEA"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#IndividuoComTEA"/>
-        <Class IRI="#EspectroAutista"/>
+        <Class IRI="#HomemComTEA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+            <Class IRI="#TendenciaMasculina"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdosoComTEA"/>
+        <Class IRI="#PessoaComTEA"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImitacaoSocialTpica"/>
+        <Class IRI="#TendenciaFeminina"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InteresseEspecfico"/>
@@ -641,6 +753,21 @@
     <SubClassOf>
         <Class IRI="#InteresseVariado"/>
         <Class IRI="#TendenciaFeminina"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JovemComTEA"/>
+        <Class IRI="#PessoaComTEA"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MulherComTEA"/>
+        <Class IRI="#PessoaComTEA"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MulherComTEA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+            <Class IRI="#TendenciaFeminina"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NLGN4"/>
@@ -664,56 +791,95 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Paladar"/>
-        <Class IRI="#CaracteristicaSensorial"/>
+        <Class IRI="#Paciente"/>
+        <Class IRI="#AdultoComTEA"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PerfilTEAAdulto"/>
-        <Class abbreviatedIRI="gufo:Relator"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PerfilTEAAdulto"/>
-        <ObjectSomeValuesFrom>
-            <ObjectInverseOf>
-                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            </ObjectInverseOf>
-            <Class IRI="#CaracteristicaGenetica"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PerfilTEAAdulto"/>
-        <ObjectSomeValuesFrom>
-            <ObjectInverseOf>
-                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            </ObjectInverseOf>
-            <Class IRI="#CaracteristicaSensorial"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PerfilTEAAdulto"/>
+        <Class IRI="#Paciente"/>
         <ObjectSomeValuesFrom>
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:mediates"/>
             </ObjectInverseOf>
-            <Class IRI="#AdultoComTEA"/>
+            <Class IRI="#PerfilTEA"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paciente"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class IRI="#TendenciaDeGeneroTEA"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paciente"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAge"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paciente"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paladar"/>
+        <Class IRI="#CaracteristicaSensorial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartoPrematuro"/>
+        <Class IRI="#GravidezConturbada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerfilTEA"/>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerfilTEA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#CaracteristicaGenetica"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerfilTEA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#CaracteristicaSensorial"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerfilTEA"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#Paciente"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PessoaComTEA"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PessoaComTEA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCaracteristicaGenetica"/>
+            <Class IRI="#CaracteristicaGenetica"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PessoaComTEA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+            <Class IRI="#CaracteristicaSensorial"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PoucoContatoVisual"/>
         <Class IRI="#Visao"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Prematuridade"/>
-        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Prematuridade"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectInverseOf>
-                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            </ObjectInverseOf>
-            <Class IRI="#GravidezConturbada"/>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PressaoNasExpectativasSociais"/>
@@ -735,17 +901,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Rubeola"/>
-        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rubeola"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectInverseOf>
-                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            </ObjectInverseOf>
-            <Class IRI="#GravidezConturbada"/>
-        </ObjectExactCardinality>
+        <Class IRI="#RubeolaNaGravidez"/>
+        <Class IRI="#GravidezConturbada"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SHANK3"/>
@@ -757,21 +914,24 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sensibilidade"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectInverseOf>
-                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            </ObjectInverseOf>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
             <Class IRI="#Fotossensibilidade"/>
-        </ObjectExactCardinality>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sensibilidade"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectInverseOf>
-                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            </ObjectInverseOf>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Hiperosmia"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensibilidade"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
             <Class IRI="#SinestesiaAlimentar"/>
-        </ObjectExactCardinality>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SindromeDeDown"/>
@@ -794,10 +954,12 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SinestesiaAlimentar"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
             <Class IRI="#Sensibilidade"/>
-        </ObjectMinCardinality>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TEA"/>
@@ -813,43 +975,18 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TendenciaDeGeneroTEA"/>
-        <ObjectSomeValuesFrom>
-            <ObjectInverseOf>
-                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            </ObjectInverseOf>
-            <Class IRI="#TendenciaFeminina"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TendenciaDeGeneroTEA"/>
-        <ObjectSomeValuesFrom>
-            <ObjectInverseOf>
-                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            </ObjectInverseOf>
-            <Class IRI="#TendenciaMasculina"/>
-        </ObjectSomeValuesFrom>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#Paciente"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TendenciaFeminina"/>
         <Class abbreviatedIRI="gufo:FunctionalComplex"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TendenciaFeminina"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class IRI="#TendenciaDeGeneroTEA"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#TendenciaMasculina"/>
         <Class abbreviatedIRI="gufo:FunctionalComplex"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TendenciaMasculina"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class IRI="#TendenciaDeGeneroTEA"/>
-        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VarianciaDeGenesNeurais"/>
@@ -859,6 +996,10 @@
         <Class IRI="#Visao"/>
         <Class IRI="#CaracteristicaSensorial"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#HomemComTEA"/>
+        <Class IRI="#MulherComTEA"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
         <NamedIndividual IRI="#ADor"/>
@@ -868,7 +1009,7 @@
         <NamedIndividual IRI="#ATemperatura"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="gufo:Kind"/>
+        <Class abbreviatedIRI="gufo:Phase"/>
         <NamedIndividual IRI="#AdultoComTEA"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -908,8 +1049,8 @@
         <NamedIndividual IRI="#CheiraObjetosExcessivamente"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual IRI="#Citomegalovirus"/>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#CitomegalovirusNaGravidez"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
@@ -928,6 +1069,10 @@
         <NamedIndividual IRI="#CriacaoDeRituais"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#CriancaComTEA"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
         <NamedIndividual IRI="#DificuldadeComIronia"/>
     </ClassAssertion>
@@ -938,10 +1083,6 @@
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
         <NamedIndividual IRI="#EscleroseTuberosa"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="gufo:Category"/>
-        <NamedIndividual IRI="#EspectroAutista"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
@@ -989,6 +1130,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#Hiperosmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
         <NamedIndividual IRI="#Hipersensibilidade"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -997,11 +1142,15 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual IRI="#ImitacaoSocialTpica"/>
+        <NamedIndividual IRI="#HomemComTEA"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="gufo:Mixin"/>
-        <NamedIndividual IRI="#IndividuoComTEA"/>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#IdosoComTEA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#ImitacaoSocialTpica"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
@@ -1010,6 +1159,14 @@
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
         <NamedIndividual IRI="#InteresseVariado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#JovemComTEA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#MulherComTEA"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
@@ -1024,20 +1181,60 @@
         <NamedIndividual IRI="#Olfato"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Role"/>
+        <NamedIndividual IRI="#Paciente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paciente"/>
+        <NamedIndividual IRI="#Paciente1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paciente"/>
+        <NamedIndividual IRI="#Paciente2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paciente"/>
+        <NamedIndividual IRI="#Paciente3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paciente"/>
+        <NamedIndividual IRI="#Paciente4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paciente"/>
+        <NamedIndividual IRI="#Paciente5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paciente"/>
+        <NamedIndividual IRI="#Paciente6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paciente"/>
+        <NamedIndividual IRI="#Paciente7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paciente"/>
+        <NamedIndividual IRI="#Paciente8"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
         <NamedIndividual IRI="#Paladar"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#PartoPrematuro"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual IRI="#PerfilTEAAdulto"/>
+        <NamedIndividual IRI="#PerfilTEA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#PessoaComTEA"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
         <NamedIndividual IRI="#PoucoContatoVisual"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual IRI="#Prematuridade"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
@@ -1048,12 +1245,16 @@
         <NamedIndividual IRI="#ReacaoIncomum"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ReacaoIncomum"/>
+        <NamedIndividual IRI="#ReacaoIncomumADor"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
         <NamedIndividual IRI="#RestricaoAlimentar"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual IRI="#Rubeola"/>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#RubeolaNaGravidez"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
@@ -1103,6 +1304,424 @@
         <Class abbreviatedIRI="gufo:Kind"/>
         <NamedIndividual IRI="#Visao"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+        <NamedIndividual IRI="#pacienteHasTendenciaFeminina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+        <NamedIndividual IRI="#pacienteHasTendenciaMasculina"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaGenetica"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <NamedIndividual IRI="#PartoPrematuro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <NamedIndividual IRI="#FascinacaoPorMovimento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <NamedIndividual IRI="#Hiperacusia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <NamedIndividual IRI="#PoucoContatoVisual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <NamedIndividual IRI="#SinestesiaAlimentar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <NamedIndividual IRI="#AtividadesIndividuais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <NamedIndividual IRI="#CriacaoDeRituais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <NamedIndividual IRI="#FugirDaInteracao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente2"/>
+        <NamedIndividual IRI="#CheiraObjetosExcessivamente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente2"/>
+        <NamedIndividual IRI="#Fotossensibilidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente2"/>
+        <NamedIndividual IRI="#RestricaoAlimentar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <NamedIndividual IRI="#Paciente2"/>
+        <NamedIndividual IRI="#CamuflagemDeSintomas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <NamedIndividual IRI="#Paciente2"/>
+        <NamedIndividual IRI="#HabilidadesDeEmpatia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <NamedIndividual IRI="#Paciente2"/>
+        <NamedIndividual IRI="#ImitacaoSocialTpica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <NamedIndividual IRI="#Paciente2"/>
+        <NamedIndividual IRI="#PressaoNasExpectativasSociais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaGenetica"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <NamedIndividual IRI="#SindromeDeDown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <NamedIndividual IRI="#AfeicaoOuRepulsaATextura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <NamedIndividual IRI="#FascinacaoPorLuzes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <NamedIndividual IRI="#FascinacaoPorMovimento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <NamedIndividual IRI="#Hiperosmia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <NamedIndividual IRI="#RestricaoAlimentar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <NamedIndividual IRI="#BaixaInterpretacaoNaoVerbal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <NamedIndividual IRI="#FugirDaInteracao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <NamedIndividual IRI="#InteresseEspecfico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <NamedIndividual IRI="#AfeicaoOuRepulsaATextura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <NamedIndividual IRI="#DisturbiosOftalmolgicos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <NamedIndividual IRI="#FocoNaVisaoPerifrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <NamedIndividual IRI="#Hiperacusia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <NamedIndividual IRI="#Hiperosmia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <NamedIndividual IRI="#ComunicacaoComplexa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <NamedIndividual IRI="#ImitacaoSocialTpica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <NamedIndividual IRI="#InteresseVariado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <NamedIndividual IRI="#PressaoNasExpectativasSociais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente5"/>
+        <NamedIndividual IRI="#FocoNaVisaoPerifrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente5"/>
+        <NamedIndividual IRI="#SinestesiaAlimentar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente5"/>
+        <NamedIndividual IRI="#ComunicaoObjetiva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente5"/>
+        <NamedIndividual IRI="#CriacaoDeRituais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente6"/>
+        <NamedIndividual IRI="#CheiraObjetosExcessivamente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente6"/>
+        <NamedIndividual IRI="#FascinacaoPorMovimento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente6"/>
+        <NamedIndividual IRI="#RestricaoAlimentar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente6"/>
+        <NamedIndividual IRI="#AtividadesIndividuais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente6"/>
+        <NamedIndividual IRI="#DificuldadeComIronia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente6"/>
+        <NamedIndividual IRI="#FugirDaInteracao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaGenetica"/>
+        <NamedIndividual IRI="#Paciente7"/>
+        <NamedIndividual IRI="#SindromeDoXFragil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente7"/>
+        <NamedIndividual IRI="#DisturbiosOftalmolgicos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente7"/>
+        <NamedIndividual IRI="#Hiperacusia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente7"/>
+        <NamedIndividual IRI="#PoucoContatoVisual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <NamedIndividual IRI="#Paciente7"/>
+        <NamedIndividual IRI="#HabilidadesDeEmpatia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente8"/>
+        <NamedIndividual IRI="#DisturbiosOftalmolgicos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <NamedIndividual IRI="#Paciente8"/>
+        <NamedIndividual IRI="#ReacaoIncomumADor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente8"/>
+        <NamedIndividual IRI="#AtividadesIndividuais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente8"/>
+        <NamedIndividual IRI="#CriacaoDeRituais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <NamedIndividual IRI="#Paciente8"/>
+        <NamedIndividual IRI="#InteresseEspecfico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+        <NamedIndividual IRI="#ReacaoIncomumADor"/>
+        <NamedIndividual IRI="#ADor"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Paciente1"/>
+        <Literal>Ryan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Paciente2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Paciente2"/>
+        <Literal>Valentina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Paciente3"/>
+        <Literal>Julio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Paciente4"/>
+        <Literal>Larissa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Paciente5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Paciente5"/>
+        <Literal>Marcos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Paciente6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Paciente6"/>
+        <Literal>Haroldo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Paciente7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Paciente7"/>
+        <Literal>Verônica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Paciente8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Paciente8"/>
+        <Literal>Thomas</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCaracteristicaGenetica"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCaracteristicaGenetica"/>
+        <Class IRI="#PessoaComTEA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <Class IRI="#PessoaComTEA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <Class IRI="#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCaracteristicaGenetica"/>
+        <Class IRI="#CaracteristicaGenetica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCaracteristicaSensorial"/>
+        <Class IRI="#CaracteristicaSensorial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pacienteHasTendenciaFeminina"/>
+        <Class IRI="#TendenciaFeminina"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pacienteHasTendenciaMasculina"/>
+        <Class IRI="#TendenciaMasculina"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAge"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#PessoaComTEA"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#PessoaComTEA"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ADor</IRI>
@@ -1165,8 +1784,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Citomegalovirus</IRI>
-        <Literal xml:lang="en">Citomegalovirus</Literal>
+        <IRI>#CitomegalovirusNaGravidez</IRI>
+        <Literal xml:lang="en">Citomegalovirus na Gravidez</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1190,6 +1809,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriancaComTEA</IRI>
+        <Literal xml:lang="en">Crianca com TEA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DificuldadeComIronia</IRI>
         <Literal xml:lang="en">Dificuldade com Ironia</Literal>
     </AnnotationAssertion>
@@ -1201,12 +1825,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#EscleroseTuberosa</IRI>
-        <Literal xml:lang="en"> Esclerose Tuberosa</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#EspectroAutista</IRI>
-        <Literal xml:lang="en">Espectro Autista</Literal>
+        <Literal xml:lang="en">Esclerose Tuberosa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1265,6 +1884,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hiperosmia</IRI>
+        <Literal xml:lang="en">Hiperosmia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Hipersensibilidade</IRI>
         <Literal xml:lang="en">Hipersensibilidade</Literal>
     </AnnotationAssertion>
@@ -1275,13 +1899,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ImitacaoSocialTpica</IRI>
-        <Literal xml:lang="en">Imitacao Social T�pica</Literal>
+        <IRI>#HomemComTEA</IRI>
+        <Literal xml:lang="en">Homem com TEA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#IndividuoComTEA</IRI>
-        <Literal xml:lang="en">Individuo com TEA</Literal>
+        <IRI>#IdosoComTEA</IRI>
+        <Literal xml:lang="en">Idoso com TEA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImitacaoSocialTpica</IRI>
+        <Literal xml:lang="en">Imitacao Social T�pica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1292,6 +1921,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#InteresseVariado</IRI>
         <Literal xml:lang="en">Interesse Variado</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JovemComTEA</IRI>
+        <Literal xml:lang="en">Jovem com TEA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MulherComTEA</IRI>
+        <Literal xml:lang="en">Mulher com TEA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1310,23 +1949,33 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Paciente</IRI>
+        <Literal xml:lang="en">Paciente</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Paladar</IRI>
         <Literal xml:lang="en">Paladar</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#PerfilTEAAdulto</IRI>
-        <Literal xml:lang="en">Perfil TEA Adulto</Literal>
+        <IRI>#PartoPrematuro</IRI>
+        <Literal xml:lang="en">Parto Prematuro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PerfilTEA</IRI>
+        <Literal xml:lang="en">Perfil TEA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PessoaComTEA</IRI>
+        <Literal xml:lang="en">Pessoa com TEA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PoucoContatoVisual</IRI>
         <Literal xml:lang="en">Pouco Contato Visual</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Prematuridade</IRI>
-        <Literal xml:lang="en">Prematuridade</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1345,8 +1994,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Rubeola</IRI>
-        <Literal xml:lang="en">Rubeola</Literal>
+        <IRI>#RubeolaNaGravidez</IRI>
+        <Literal xml:lang="en">Rubeola na Gravidez</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
