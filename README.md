@@ -6,7 +6,7 @@
 O foco dessa ontologia é a caracterização de pessoas adultas com TEA dentro do contexto genético e sensorial, com menções à diferenciação entre determinados padrões de comportamento masculino e feminino dentro do transtorno.
 
 <h3>Link de Acesso ao Colab com implementação do OWLReady2: </h3>
-<a href="https://colab.research.google.com/drive/1eQuP5CJS34VLTMMalKYUT8yPXPqyYIsD?usp=sharing">https://colab.research.google.com/drive/1eQuP5CJS34VLTMMalKYUT8yPXPqyYIsD?usp=sharing</a>
+<a href="https://colab.research.google.com/drive/1eQuP5CJS34VLTMMalKYUT8yPXPqyYIsD?usp=sharing">Acesso Institucional - Ufersa</a>
 
 <h3>Visões do OntoUML</h3>
 
@@ -17,7 +17,7 @@ O foco dessa ontologia é a caracterização de pessoas adultas com TEA dentro d
 3ª - CaracterísticasGenéticas: voltado à especificação das características genéticas do Adulto com TEA, havendo relações do TEA com outros transtornos do neurodesenvolvimento e com as condições parentais.
 
 <h3>OWL</h3>
-Até o momento, a importação do modelo do OntoUML ao Protégé não causa nenhum problema, porém ainda não foram feitas espeficicações para com as object proprieties e suas aplicações nas classes.
+A importação do modelo do OntoUML ao Protégé não traz propriedades de dados e nem de objetos que foram especificadas no arquivo .owx, por isso deve-ser utilizar o arquivo OntoUML apenas para visualização. Quando precisar importar ao Protégé, utilizar o próprio arquivo .owx. 
 
 <h3>Considerações</h3>
 
@@ -32,7 +32,7 @@ Até o momento, a importação do modelo do OntoUML ao Protégé não causa nenh
 <h3>Possíveis consultas SPARQL a serem realizadas na versão em inglês da ontologia:</h3>
 
 <h4>Consulta para buscar o paciente, nome e idade</h4>
-```bash
+
     PREFIX asd: <http://asdontology.com#>
 
     SELECT ?subject (STR(?rdfName) AS ?nome) (STR(?rdfAge) AS ?idade)
@@ -40,10 +40,10 @@ Até o momento, a importação do modelo do OntoUML ao Protégé não causa nenh
         ?subject asd:hasName ?rdfName ;
                  asd:hasAge ?rdfAge
     }
-```
+
 
 <h4>Consulta para buscar nome, característica sensorial e característica genética das instâncias</h4>
-```bash
+
     PREFIX asd: <http://asdontology.com#>
 
     SELECT (STR(?rdfName) AS ?nome) ?caracteristicaSensorial ?caracteristicaGenetica
@@ -52,10 +52,10 @@ Até o momento, a importação do modelo do OntoUML ao Protégé não causa nenh
                  asd:hasSensoryTrait ?caracteristicaSensorial.
         OPTIONAL { ?subject asd:hasGeneticTrait ?caracteristicaGenetica. }
     }
-```
+
 
 <h4>Consulta para buscar nome e tendência feminina das instâncias</h4>
-```bash
+
     PREFIX asd: <http://asdontology.com#>
 
     SELECT ?rdfName ?tendenciaFeminina
@@ -69,10 +69,9 @@ Até o momento, a importação do modelo do OntoUML ao Protégé não causa nenh
 
         FILTER (BOUND(?tendenciaFeminina))
     }
-```
 
 <h4>Consulta para buscar nome, características genéticas e tendência de gênero das instâncias</h4>
-```bash
+
     PREFIX asd: <http://asdontology.com#>
 
     SELECT (STR(?rdfName) AS ?name) ?geneticTrait ?genderTendency
@@ -86,10 +85,9 @@ Até o momento, a importação do modelo do OntoUML ao Protégé não causa nenh
             ?subject asd:patientHasFemaleTendency ?genderTendency .
         }
     }
-```
 
 <h4>Consulta para buscar nome e características sensoriais (subclasses de Taste)</h4>
-```bash
+
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX asd: <http://asdontology.com#>
 
@@ -99,10 +97,9 @@ Até o momento, a importação do modelo do OntoUML ao Protégé não causa nenh
                  asd:hasSensoryTrait ?sensoryTrait .
         ?sensoryTrait rdfs:subClassOf asd:Taste .
     }
-```
 
 <h4>Consulta para buscar nome, número de características sensoriais, características genéticas e tendências de gênero</h4>
-```bash
+
     PREFIX asd: <http://asdontology.com#>
 
     SELECT
@@ -119,4 +116,3 @@ Até o momento, a importação do modelo do OntoUML ao Protégé não causa nenh
         OPTIONAL { ?subject asd:patientHasFemaleTendency ?femalePatient . }
     }
     GROUP BY ?rdfName
-```
