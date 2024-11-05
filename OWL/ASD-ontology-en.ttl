@@ -1,0 +1,322 @@
+@prefix : <http://asdontology.com#>.
+@prefix gufo: <http://purl.org/nemo/gufo#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://asdontology.com> rdf:type owl:Ontology;
+    owl:imports gufo:.
+:PersonWithASD rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Person with ASD\n"@en.
+:SensoryTrait rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Sensory Trait"@en.
+:GeneticTrait rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Genetic Trait"@en.
+:Touch rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Touch"@en.
+:Taste rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Taste"@en.
+:Hearing rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Hearing"@en.
+:Smell rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Smell"@en.
+:FoodRestriction rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Food Restriction"@en.
+:Vision rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Vision"@en.
+:FoodSynesthesia rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Food Synesthesia"@en.
+:ParentalCondition rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Parental Condition"@en.
+:FragileXSyndrome rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Fragile X Syndrome"@en.
+:TuberousSclerosis rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Tuberous Sclerosis\n"@en.
+:DownSyndrome rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Down Syndrome"@en.
+:ComplicatedPregnancy rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Complicated Pregnancy"@en.
+:RubellaInPregnancy rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Rubella in Pregnancy"@en.
+:CytomegalovirusInPregnancy rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Cytomegalovirus in Pregnancy"@en.
+:PrematureBirth rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Premature Birth"@en.
+:AnotherChildWithASD rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Another Child with ASD"@en.
+:Phenylketonuria rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Phenylketonuria"@en.
+:NeuralGeneVariance rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:label "Neural Gene Variance"@en.
+:SHANK3 rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "SHANK3"@en.
+:NRXN1 rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "NRXN1"@en.
+:NLGN4 rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "NLGN4"@en.
+:UnusualReaction rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Unusual Reaction"@en.
+:UnusualReactionToTemperature rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Unusual Reaction to Temperature"@en.
+:UnusualReactionToPain rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Unusual Reaction to Pain"@en.
+:AffinityOrAversionToTexture rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Affinity or Aversion to Texture"@en.
+:OphthalmologicalDisorders rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Ophthalmological Disorders"@en.
+:LimitedEyeContact rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Limited Eye Contact"@en.
+:Sensitivity rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Quality;
+    rdfs:label "Sensitivity"@en.
+:Hyposensitivity rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Hyposensitivity"@en.
+:Hypersensitivity rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Hypersensitivity"@en.
+:FocusOnPeripheralVision rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Focus on Peripheral Vision"@en.
+:Photosensitivity rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Photosensitivity"@en.
+:Hyperacusis rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Hyperacusis"@en.
+:ObjectiveCommunication rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Objective Communication"@en.
+:DifficultyWithIrony rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Difficulty with Irony"@en.
+:SpecificInterest rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Specific Interest"@en.
+:IndividualActivities rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Individual Activities"@en.
+:LowNonVerbalInterpretation rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Low Non-Verbal Interpretation"@en.
+:AvoidanceOfInteraction rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Avoidance of Interaction"@en.
+:ComplexCommunication rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Complex Communication"@en.
+:EmpathySkills rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Empathy Skills"@en.
+:VariedInterests rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Varied Interests"@en.
+:GoodEngagement rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Good Engagement"@en.
+:SymptomCamouflage rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Symptom Camouflage"@en.
+:PressureFromSocialExpectations rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Pressure from Social Expectations"@en.
+:RitualCreation rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Ritual Creation"@en.
+:TypicalSocialImitation rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Typical Social Imitation"@en.
+:MaleTendency rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Male Tendency"@en.
+:FemaleTendency rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Female Tendency"@en.
+:ASDProfile rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "ASD Profile"@en.
+:AdultWithASD rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Adult with ASD"@en.
+:ASDGenderTendency rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "ASD Gender Tendency"@en.
+:VisualFascination rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Visual Fascination"@en.
+:FascinationWithLights rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Fascination with Lights"@en.
+:FascinationWithMovement rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Fascination with Movement"@en.
+:ExcessiveObjectSmelling rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Excessive Object Smelling"@en.
+:ChildWithASD rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Child with ASD"@en.
+:YouthWithASD rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Youth with ASD"@en.
+:ElderlyPersonWithASD rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Elderly Person with ASD"@en.
+:WomanWithASD rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Woman with ASD"@en.
+:ManWithASD rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Man with ASD"@en.
+:Patient rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Patient"@en.
+:Hyperosmia rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Hyperosmia"@en.
+:Touch rdfs:subClassOf :SensoryTrait.
+:Taste rdfs:subClassOf :SensoryTrait.
+:Smell rdfs:subClassOf :SensoryTrait.
+:Hearing rdfs:subClassOf :SensoryTrait.
+:FoodRestriction rdfs:subClassOf :Taste.
+:Vision rdfs:subClassOf :SensoryTrait.
+:FoodSynesthesia rdfs:subClassOf :Taste.
+:ParentalCondition rdfs:subClassOf :GeneticTrait.
+:ComplicatedPregnancy rdfs:subClassOf :ParentalCondition.
+:AnotherChildWithASD rdfs:subClassOf :ParentalCondition.
+:DownSyndrome rdfs:subClassOf :GeneticTrait.
+:TuberousSclerosis rdfs:subClassOf :GeneticTrait.
+:FragileXSyndrome rdfs:subClassOf :GeneticTrait.
+:Phenylketonuria rdfs:subClassOf :ParentalCondition.
+:NeuralGeneVariance rdfs:subClassOf :GeneticTrait.
+:UnusualReaction rdfs:subClassOf :Touch.
+:UnusualReactionToTemperature rdfs:subClassOf :UnusualReaction.
+:UnusualReactionToPain rdfs:subClassOf :UnusualReaction.
+:AffinityOrAversionToTexture rdfs:subClassOf :Touch.
+:LimitedEyeContact rdfs:subClassOf :Vision.
+:Hyposensitivity rdfs:subClassOf :Sensitivity.
+:Hypersensitivity rdfs:subClassOf :Sensitivity.
+:FocusOnPeripheralVision rdfs:subClassOf :Vision.
+:OphthalmologicalDisorders rdfs:subClassOf :Vision.
+:Photosensitivity rdfs:subClassOf :Vision.
+:Hyperacusis rdfs:subClassOf :Hearing.
+:SymptomCamouflage rdfs:subClassOf :FemaleTendency.
+:EmpathySkills rdfs:subClassOf :FemaleTendency.
+:ComplexCommunication rdfs:subClassOf :FemaleTendency.
+:PressureFromSocialExpectations rdfs:subClassOf :FemaleTendency.
+:GoodEngagement rdfs:subClassOf :FemaleTendency.
+:TypicalSocialImitation rdfs:subClassOf :FemaleTendency.
+:VariedInterests rdfs:subClassOf :FemaleTendency.
+:SHANK3 rdfs:subClassOf :NeuralGeneVariance.
+:NLGN4 rdfs:subClassOf :NeuralGeneVariance.
+:NRXN1 rdfs:subClassOf :NeuralGeneVariance.
+:VisualFascination rdfs:subClassOf :Vision.
+:FascinationWithLights rdfs:subClassOf :VisualFascination.
+:FascinationWithMovement rdfs:subClassOf :VisualFascination.
+:ExcessiveObjectSmelling rdfs:subClassOf :Smell.
+:ChildWithASD rdfs:subClassOf :PersonWithASD.
+:YouthWithASD rdfs:subClassOf :PersonWithASD.
+:ElderlyPersonWithASD rdfs:subClassOf :PersonWithASD.
+:AdultWithASD rdfs:subClassOf :PersonWithASD.
+:WomanWithASD rdfs:subClassOf :PersonWithASD.
+:ManWithASD rdfs:subClassOf :PersonWithASD.
+:Patient rdfs:subClassOf :AdultWithASD.
+:DifficultyWithIrony rdfs:subClassOf :MaleTendency.
+:AvoidanceOfInteraction rdfs:subClassOf :MaleTendency.
+:IndividualActivities rdfs:subClassOf :MaleTendency.
+:ObjectiveCommunication rdfs:subClassOf :MaleTendency.
+:RitualCreation rdfs:subClassOf :MaleTendency.
+:LowNonVerbalInterpretation rdfs:subClassOf :MaleTendency.
+:SpecificInterest rdfs:subClassOf :MaleTendency.
+:CytomegalovirusInPregnancy rdfs:subClassOf :ComplicatedPregnancy.
+:PrematureBirth rdfs:subClassOf :ComplicatedPregnancy.
+:RubellaInPregnancy rdfs:subClassOf :ComplicatedPregnancy.
+:Hyperosmia rdfs:subClassOf :Smell.
+:PersonWithASD owl:equivalentClass [
+  rdf:type owl:Class;
+  owl:unionOf (:YouthWithASD :ElderlyPersonWithASD :AdultWithASD :ChildWithASD)
+].
+[ rdf:type owl:AllDisjointClasses ] owl:members (:WomanWithASD :ManWithASD).
+:PersonWithASD owl:equivalentClass [
+  rdf:type owl:Class;
+  owl:unionOf (:WomanWithASD :ManWithASD)
+].
+:patientHasMaleTendency rdf:type owl:ObjectProperty;
+    rdfs:domain :Patient;
+    rdfs:range :MaleTendency;
+    rdf:type gufo:MaterialRelationshipType.
+:patientHasFemaleTendency rdf:type owl:ObjectProperty;
+    rdfs:domain :Patient;
+    rdfs:range :FemaleTendency;
+    rdf:type gufo:MaterialRelationshipType.
+:AffinityOrAversionToTexture rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:isComponentOf ];
+  owl:someValuesFrom :FoodRestriction
+].
+:FoodRestriction rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:isComponentOf;
+  owl:someValuesFrom :AffinityOrAversionToTexture
+].
+:Smell rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:isComponentOf ];
+  owl:someValuesFrom :FoodSynesthesia
+].
+:FoodSynesthesia rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:isComponentOf;
+  owl:someValuesFrom :Smell
+].
+:Patient rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :ASDGenderTendency
+].
+:ASDGenderTendency rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Patient
+].
+:Patient rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :ASDProfile
+].
+:ASDProfile rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Patient
+].
+:GeneticTrait rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :ASDProfile
+].
+:ASDProfile rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:someValuesFrom :GeneticTrait
+].
+:SensoryTrait rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :ASDProfile
+].
+:ASDProfile rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:someValuesFrom :SensoryTrait
+].
+:Photosensitivity rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Sensitivity
+].
+:Sensitivity rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Photosensitivity
+].
+:Hyperosmia rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Sensitivity
+].
+:Sensitivity rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Hyperosmia
+].
+:FoodSynesthesia rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Sensitivity
+].
+:Sensitivity rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :FoodSynesthesia
+].

@@ -1,0 +1,1617 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://asdontology.com"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://asdontology.com">
+    <Prefix name="" IRI="http://asdontology.com#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="gufo" IRI="http://purl.org/nemo/gufo#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/nemo/gufo#</Import>
+    <Declaration>
+        <Class IRI="#ASDGenderTendency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ASDProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdultWithASD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AffinityOrAversionToTexture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnotherChildWithASD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AvoidanceOfInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildWithASD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplexCommunication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplicatedPregnancy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CytomegalovirusInPregnancy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DifficultyWithIrony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DownSyndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElderlyPersonWithASD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmpathySkills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExcessiveObjectSmelling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FascinationWithLights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FascinationWithMovement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FemaleTendency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FocusOnPeripheralVision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodRestriction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodSynesthesia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FragileXSyndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeneticTrait"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoodEngagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hyperacusis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hyperosmia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hypersensitivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hyposensitivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LimitedEyeContact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowNonVerbalInterpretation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaleTendency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManWithASD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NLGN4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NRXN1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeuralGeneVariance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectiveCommunication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OphthalmologicalDisorders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParentalCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonWithASD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phenylketonuria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Photosensitivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrematureBirth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressureFromSocialExpectations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RitualCreation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RubellaInPregnancy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SHANK3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensitivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensoryTrait"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecificInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymptomCamouflage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Touch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TuberousSclerosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TypicalSocialImitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnusualReaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnusualReactionToPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnusualReactionToTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VariedInterests"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualFascination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WomanWithASD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YouthWithASD"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeneticTrait"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSensoryTrait"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientHasFemaleTendency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientHasMaleTendency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASDGenderTendency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASDProfile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdultWithASD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AffinityOrAversionToTexture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnotherChildWithASD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AvoidanceOfInteraction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChildWithASD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ComplexCommunication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ComplicatedPregnancy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CytomegalovirusInPregnancy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DifficultyWithIrony"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DownSyndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElderlyPersonWithASD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EmpathySkills"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExcessiveObjectSmelling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FascinationWithLights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FascinationWithMovement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FemaleTendency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FocusOnPeripheralVision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FoodRestriction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FoodSynesthesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FragileXSyndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GeneticTrait"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GoodEngagement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hearing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hyperacusis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hyperosmia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypersensitivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hyposensitivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IndividualActivities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LimitedEyeContact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowNonVerbalInterpretation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MaleTendency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManWithASD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NLGN4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NRXN1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NeuralGeneVariance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ObjectiveCommunication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OphthalmologicalDisorders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParentalCondition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PersonWithASD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phenylketonuria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Photosensitivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrematureBirth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PressureFromSocialExpectations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RitualCreation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RubellaInPregnancy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SHANK3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sensitivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SensoryTrait"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpecificInterest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SymptomCamouflage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Touch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TuberousSclerosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TypicalSocialImitation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnusualReaction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnusualReactionToPain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnusualReactionToTemperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VariedInterests"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualFascination"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WomanWithASD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YouthWithASD"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Phase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Kind"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Role"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patientHasFemaleTendency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:isComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Category"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patientHasMaleTendency"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#PersonWithASD"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <Class IRI="#AdultWithASD"/>
+                <Class IRI="#ChildWithASD"/>
+                <Class IRI="#ElderlyPersonWithASD"/>
+                <Class IRI="#YouthWithASD"/>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <Class IRI="#ManWithASD"/>
+                <Class IRI="#WomanWithASD"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PersonWithASD"/>
+        <ObjectUnionOf>
+            <Class IRI="#AdultWithASD"/>
+            <Class IRI="#ChildWithASD"/>
+            <Class IRI="#ElderlyPersonWithASD"/>
+            <Class IRI="#YouthWithASD"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PersonWithASD"/>
+        <ObjectUnionOf>
+            <Class IRI="#ManWithASD"/>
+            <Class IRI="#WomanWithASD"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ASDGenderTendency"/>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ASDGenderTendency"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#Patient"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ASDProfile"/>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ASDProfile"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#GeneticTrait"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ASDProfile"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#SensoryTrait"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ASDProfile"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#Patient"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdultWithASD"/>
+        <Class IRI="#PersonWithASD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AffinityOrAversionToTexture"/>
+        <Class IRI="#Touch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AffinityOrAversionToTexture"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:isComponentOf"/>
+            </ObjectInverseOf>
+            <Class IRI="#FoodRestriction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnotherChildWithASD"/>
+        <Class IRI="#ParentalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AvoidanceOfInteraction"/>
+        <Class IRI="#MaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildWithASD"/>
+        <Class IRI="#PersonWithASD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplexCommunication"/>
+        <Class IRI="#FemaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplicatedPregnancy"/>
+        <Class IRI="#ParentalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CytomegalovirusInPregnancy"/>
+        <Class IRI="#ComplicatedPregnancy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DifficultyWithIrony"/>
+        <Class IRI="#MaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DownSyndrome"/>
+        <Class IRI="#GeneticTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElderlyPersonWithASD"/>
+        <Class IRI="#PersonWithASD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmpathySkills"/>
+        <Class IRI="#FemaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExcessiveObjectSmelling"/>
+        <Class IRI="#Smell"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FascinationWithLights"/>
+        <Class IRI="#VisualFascination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FascinationWithMovement"/>
+        <Class IRI="#VisualFascination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FemaleTendency"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FocusOnPeripheralVision"/>
+        <Class IRI="#Vision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodRestriction"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodRestriction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:isComponentOf"/>
+            <Class IRI="#AffinityOrAversionToTexture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodSynesthesia"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodSynesthesia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:isComponentOf"/>
+            <Class IRI="#Smell"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodSynesthesia"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
+            <Class IRI="#Sensitivity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FragileXSyndrome"/>
+        <Class IRI="#GeneticTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeneticTrait"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeneticTrait"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class IRI="#ASDProfile"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoodEngagement"/>
+        <Class IRI="#FemaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hearing"/>
+        <Class IRI="#SensoryTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperacusis"/>
+        <Class IRI="#Hearing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperosmia"/>
+        <Class IRI="#Smell"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperosmia"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
+            <Class IRI="#Sensitivity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hypersensitivity"/>
+        <Class IRI="#Sensitivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyposensitivity"/>
+        <Class IRI="#Sensitivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualActivities"/>
+        <Class IRI="#MaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LimitedEyeContact"/>
+        <Class IRI="#Vision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowNonVerbalInterpretation"/>
+        <Class IRI="#MaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaleTendency"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManWithASD"/>
+        <Class IRI="#PersonWithASD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NLGN4"/>
+        <Class IRI="#NeuralGeneVariance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NRXN1"/>
+        <Class IRI="#NeuralGeneVariance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeuralGeneVariance"/>
+        <Class IRI="#GeneticTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectiveCommunication"/>
+        <Class IRI="#MaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OphthalmologicalDisorders"/>
+        <Class IRI="#Vision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParentalCondition"/>
+        <Class IRI="#GeneticTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <Class IRI="#AdultWithASD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class IRI="#ASDGenderTendency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class IRI="#ASDProfile"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAge"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonWithASD"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonWithASD"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasGeneticTrait"/>
+            <Class IRI="#GeneticTrait"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonWithASD"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSensoryTrait"/>
+            <Class IRI="#SensoryTrait"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phenylketonuria"/>
+        <Class IRI="#ParentalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Photosensitivity"/>
+        <Class IRI="#Vision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Photosensitivity"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
+            <Class IRI="#Sensitivity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrematureBirth"/>
+        <Class IRI="#ComplicatedPregnancy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressureFromSocialExpectations"/>
+        <Class IRI="#FemaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RitualCreation"/>
+        <Class IRI="#MaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RubellaInPregnancy"/>
+        <Class IRI="#ComplicatedPregnancy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SHANK3"/>
+        <Class IRI="#NeuralGeneVariance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensitivity"/>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensitivity"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#FoodSynesthesia"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensitivity"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Hyperosmia"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensitivity"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Photosensitivity"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensoryTrait"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensoryTrait"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class IRI="#ASDProfile"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smell"/>
+        <Class IRI="#SensoryTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smell"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:isComponentOf"/>
+            </ObjectInverseOf>
+            <Class IRI="#FoodSynesthesia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecificInterest"/>
+        <Class IRI="#MaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymptomCamouflage"/>
+        <Class IRI="#FemaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taste"/>
+        <Class IRI="#SensoryTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Touch"/>
+        <Class IRI="#SensoryTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TuberousSclerosis"/>
+        <Class IRI="#GeneticTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TypicalSocialImitation"/>
+        <Class IRI="#FemaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnusualReaction"/>
+        <Class IRI="#Touch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnusualReactionToPain"/>
+        <Class IRI="#UnusualReaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnusualReactionToTemperature"/>
+        <Class IRI="#UnusualReaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VariedInterests"/>
+        <Class IRI="#FemaleTendency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vision"/>
+        <Class IRI="#SensoryTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualFascination"/>
+        <Class IRI="#Vision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WomanWithASD"/>
+        <Class IRI="#PersonWithASD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YouthWithASD"/>
+        <Class IRI="#PersonWithASD"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ManWithASD"/>
+        <Class IRI="#WomanWithASD"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#ASDGenderTendency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#ASDProfile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#AdultWithASD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#AffinityOrAversionToTexture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#AnotherChildWithASD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#AvoidanceOfInteraction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#ChildWithASD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#ComplexCommunication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#ComplicatedPregnancy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#CytomegalovirusInPregnancy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#DifficultyWithIrony"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#DownSyndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#ElderlyPersonWithASD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#EmpathySkills"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#ExcessiveObjectSmelling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#FascinationWithLights"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#FascinationWithMovement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#FemaleTendency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#FocusOnPeripheralVision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#FoodRestriction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#FoodSynesthesia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#FragileXSyndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#GeneticTrait"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#GoodEngagement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Hearing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#Hyperacusis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#Hyperosmia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#Hypersensitivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#Hyposensitivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#IndividualActivities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#LimitedEyeContact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#LowNonVerbalInterpretation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#MaleTendency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#ManWithASD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#NLGN4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#NRXN1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#NeuralGeneVariance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#ObjectiveCommunication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#OphthalmologicalDisorders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#ParentalCondition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Role"/>
+        <NamedIndividual IRI="#Patient"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#PersonWithASD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#Phenylketonuria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#Photosensitivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#PrematureBirth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#PressureFromSocialExpectations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#RitualCreation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#RubellaInPregnancy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#SHANK3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Sensitivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#SensoryTrait"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Smell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#SpecificInterest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#SymptomCamouflage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Taste"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Touch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#TuberousSclerosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#TypicalSocialImitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#UnusualReaction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#UnusualReactionToPain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#UnusualReactionToTemperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#VariedInterests"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Vision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#VisualFascination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="#WomanWithASD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual IRI="#YouthWithASD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+        <NamedIndividual IRI="#patientHasFemaleTendency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+        <NamedIndividual IRI="#patientHasMaleTendency"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGeneticTrait"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSensoryTrait"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGeneticTrait"/>
+        <Class IRI="#PersonWithASD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSensoryTrait"/>
+        <Class IRI="#PersonWithASD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientHasFemaleTendency"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientHasMaleTendency"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGeneticTrait"/>
+        <Class IRI="#GeneticTrait"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSensoryTrait"/>
+        <Class IRI="#SensoryTrait"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientHasFemaleTendency"/>
+        <Class IRI="#FemaleTendency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientHasMaleTendency"/>
+        <Class IRI="#MaleTendency"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAge"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#PersonWithASD"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#PersonWithASD"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ASDGenderTendency</IRI>
+        <Literal xml:lang="en">ASD Gender Tendency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ASDProfile</IRI>
+        <Literal xml:lang="en">ASD Profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AdultWithASD</IRI>
+        <Literal xml:lang="en">Adult with ASD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AffinityOrAversionToTexture</IRI>
+        <Literal xml:lang="en">Affinity or Aversion to Texture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnotherChildWithASD</IRI>
+        <Literal xml:lang="en">Another Child with ASD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AvoidanceOfInteraction</IRI>
+        <Literal xml:lang="en">Avoidance of Interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChildWithASD</IRI>
+        <Literal xml:lang="en">Child with ASD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ComplexCommunication</IRI>
+        <Literal xml:lang="en">Complex Communication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ComplicatedPregnancy</IRI>
+        <Literal xml:lang="en">Complicated Pregnancy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CytomegalovirusInPregnancy</IRI>
+        <Literal xml:lang="en">Cytomegalovirus in Pregnancy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DifficultyWithIrony</IRI>
+        <Literal xml:lang="en">Difficulty with Irony</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DownSyndrome</IRI>
+        <Literal xml:lang="en">Down Syndrome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ElderlyPersonWithASD</IRI>
+        <Literal xml:lang="en">Elderly Person with ASD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EmpathySkills</IRI>
+        <Literal xml:lang="en">Empathy Skills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExcessiveObjectSmelling</IRI>
+        <Literal xml:lang="en">Excessive Object Smelling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FascinationWithLights</IRI>
+        <Literal xml:lang="en">Fascination with Lights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FascinationWithMovement</IRI>
+        <Literal xml:lang="en">Fascination with Movement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FemaleTendency</IRI>
+        <Literal xml:lang="en">Female Tendency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FocusOnPeripheralVision</IRI>
+        <Literal xml:lang="en">Focus on Peripheral Vision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FoodRestriction</IRI>
+        <Literal xml:lang="en">Food Restriction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FoodSynesthesia</IRI>
+        <Literal xml:lang="en">Food Synesthesia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FragileXSyndrome</IRI>
+        <Literal xml:lang="en">Fragile X Syndrome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GeneticTrait</IRI>
+        <Literal xml:lang="en">Genetic Trait</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GoodEngagement</IRI>
+        <Literal xml:lang="en">Good Engagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hearing</IRI>
+        <Literal xml:lang="en">Hearing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hyperacusis</IRI>
+        <Literal xml:lang="en">Hyperacusis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hyperosmia</IRI>
+        <Literal xml:lang="en">Hyperosmia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hypersensitivity</IRI>
+        <Literal xml:lang="en">Hypersensitivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hyposensitivity</IRI>
+        <Literal xml:lang="en">Hyposensitivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndividualActivities</IRI>
+        <Literal xml:lang="en">Individual Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LimitedEyeContact</IRI>
+        <Literal xml:lang="en">Limited Eye Contact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LowNonVerbalInterpretation</IRI>
+        <Literal xml:lang="en">Low Non-Verbal Interpretation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MaleTendency</IRI>
+        <Literal xml:lang="en">Male Tendency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ManWithASD</IRI>
+        <Literal xml:lang="en">Man with ASD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NLGN4</IRI>
+        <Literal xml:lang="en">NLGN4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NRXN1</IRI>
+        <Literal xml:lang="en">NRXN1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NeuralGeneVariance</IRI>
+        <Literal xml:lang="en">Neural Gene Variance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ObjectiveCommunication</IRI>
+        <Literal xml:lang="en">Objective Communication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OphthalmologicalDisorders</IRI>
+        <Literal xml:lang="en">Ophthalmological Disorders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParentalCondition</IRI>
+        <Literal xml:lang="en">Parental Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Patient</IRI>
+        <Literal xml:lang="en">Patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PersonWithASD</IRI>
+        <Literal xml:lang="en">Person with ASD
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Phenylketonuria</IRI>
+        <Literal xml:lang="en">Phenylketonuria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Photosensitivity</IRI>
+        <Literal xml:lang="en">Photosensitivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrematureBirth</IRI>
+        <Literal xml:lang="en">Premature Birth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PressureFromSocialExpectations</IRI>
+        <Literal xml:lang="en">Pressure from Social Expectations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RitualCreation</IRI>
+        <Literal xml:lang="en">Ritual Creation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RubellaInPregnancy</IRI>
+        <Literal xml:lang="en">Rubella in Pregnancy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SHANK3</IRI>
+        <Literal xml:lang="en">SHANK3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sensitivity</IRI>
+        <Literal xml:lang="en">Sensitivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SensoryTrait</IRI>
+        <Literal xml:lang="en">Sensory Trait</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Smell</IRI>
+        <Literal xml:lang="en">Smell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpecificInterest</IRI>
+        <Literal xml:lang="en">Specific Interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SymptomCamouflage</IRI>
+        <Literal xml:lang="en">Symptom Camouflage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Taste</IRI>
+        <Literal xml:lang="en">Taste</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Touch</IRI>
+        <Literal xml:lang="en">Touch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TuberousSclerosis</IRI>
+        <Literal xml:lang="en">Tuberous Sclerosis
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TypicalSocialImitation</IRI>
+        <Literal xml:lang="en">Typical Social Imitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UnusualReaction</IRI>
+        <Literal xml:lang="en">Unusual Reaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UnusualReactionToPain</IRI>
+        <Literal xml:lang="en">Unusual Reaction to Pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UnusualReactionToTemperature</IRI>
+        <Literal xml:lang="en">Unusual Reaction to Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VariedInterests</IRI>
+        <Literal xml:lang="en">Varied Interests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Vision</IRI>
+        <Literal xml:lang="en">Vision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VisualFascination</IRI>
+        <Literal xml:lang="en">Visual Fascination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WomanWithASD</IRI>
+        <Literal xml:lang="en">Woman with ASD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#YouthWithASD</IRI>
+        <Literal xml:lang="en">Youth with ASD</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
